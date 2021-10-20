@@ -1,24 +1,55 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Pages/Shared/Navbar/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import Services from './Pages/Services/Services';
+import Doctors from './Pages/Doctors/Doctors';
+import Footer from './Pages/Shared/Footer/Footer';
+import Login from './Pages/Login/Login';
+import Appointment from './Pages/Appointment/Appointment';
+import Register from './Pages/Login/Register';
+import AuthProvider from './Context/AuthProvider';
+import IndividualService from './Pages/Services/IndividualService/IndividualService';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+      <Navbar></Navbar>
+        <Switch>
+          <Route exact path='/'>
+            <Home></Home>
+          </Route>
+          <Route path='/home'>
+            <Home></Home>
+          </Route>
+          <Route path='/services'>
+            <Services></Services>
+          </Route>
+          <Route path='/home#aboutus'>
+            <Home></Home>
+          </Route>
+          <Route path='/doctor'>
+            <Doctors></Doctors>
+          </Route>
+          <Route path='/login'>
+            <Login></Login>
+          </Route>
+          <Route path='/register'>
+            <Register></Register>
+          </Route>
+          <PrivateRoute path='/serviceinfo/:serviceid'>
+            <IndividualService></IndividualService>
+          </PrivateRoute>
+          <PrivateRoute path='/appointment'>
+            <Appointment></Appointment>
+          </PrivateRoute>
+        </Switch>
+        <Footer></Footer>
+      </Router>
+    </AuthProvider>
   );
 }
 

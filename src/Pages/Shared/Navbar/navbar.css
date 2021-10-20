@@ -1,0 +1,47 @@
+.navbar{
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+.navbar ul li a{
+    color: #1d1d1d;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navbar ul li a:visited{
+    color:#1d1d1d;
+}
+.navbar ul li:hover a{
+    color:#6cbc2c;
+}
+.navbar .logo{
+    width:150px;
+}
+.navbar .logout-btn{
+    box-sizing: border-box;
+    border:none;
+    background: none;
+    color: #6cbc2c;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: .3s all ease;
+}
+.navbar .logout-btn:hover{
+    color: #f30d0d;
+    border: 2px solid #f30d0d;
+}
+.navbar-toggler-icon{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+@media only screen and (max-width: 600px) {
+    .user-logout{
+        flex-direction: column;
+    }
+    .user-logout::before{
+        content: '';
+        height: 1px;
+        width: 100vw;
+        margin: 10px 0px;
+        background-color: #1d1d1dad;
+
+    }
+}

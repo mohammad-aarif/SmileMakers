@@ -1,0 +1,58 @@
+[
+	{
+		"key": 1,
+		"name": "Danny Reed",
+		"title": "President & CEO",
+		"description": "He's the most experienced doctors of all the staffs at SmileMaker. Patients love him for his carefulness, humor and wisdom.",
+		"img": "https://i.ibb.co/7bwsBsk/team-02-144x144.png"
+	},
+	{
+		"key": 2,
+		"name": "Lillie Riley",
+		"title": "Vice President",
+		"description": "His smile is the thing that patients admire the most. He said his dream is to make people obtain the best smile.",
+		"img": "https://i.ibb.co/nrp4zKJ/team-04-144x144.png"
+	},
+	{
+		"key": 3,
+		"name": "Pearl Wheeler",
+		"title": "Customer Services",
+		"description": "She has the ability to answer all questions with clear instructions, easy to follow her guide with great patience.",
+		"img": "https://i.ibb.co/rmmGkN8/team-06-144x144.png"
+	},
+	{
+		"key": 4,
+		"name": "Theresa Cruz",
+		"title": "Doctor",
+		"description": "He makes people have a feeling that he's strict, but in fact, he's quite friendly and likes to small talk to patients.",
+		"img": "https://i.ibb.co/xFmpZdy/team-01-144x144.png"
+	},
+	{
+		"key": 5,
+		"name": "Lena Clarke",
+		"title": "Doctor",
+		"description": "She graduated from Harvard University and had 5 years of working in dentistry. She's got a shrewd instinct.",
+		"img": "https://i.ibb.co/3kKdpHJ/team-08-144x144.png"
+	},
+	{
+		"key": 6,
+		"name": "Bertha Sherman",
+		"title": "Doctor",
+		"description": "She loves kids and has special talents when it comes to dealing with kids. Her major patients are kids, too.",
+		"img": "https://i.ibb.co/cbVfHF0/team-05-144x144.png"
+	},
+	{
+		"key": 7,
+		"name": "Scott Colon",
+		"title": "Doctor",
+		"description": "Ladies love him not only because of his professional advice & etiquette but also because of his friendliness.",
+		"img": "https://i.ibb.co/syWqxz2/team-07-144x144.png"
+	},
+	{
+		"key": 8,
+		"name": "Dollie Horton",
+		"title": "Doctor",
+		"description": "She has been providing dental services at SmileMaker Clinic for 10 years now. She's considerate and professional.",
+		"img": "https://i.ibb.co/9vFm5KK/team-03-144x144.png"
+	}
+]

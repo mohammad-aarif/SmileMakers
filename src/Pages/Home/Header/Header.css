@@ -1,0 +1,37 @@
+.header{
+    background: linear-gradient(45deg, white 15%, rgba(255, 255, 255, 0) 100%), url('https://images.unsplash.com/photo-1580821810660-5486b8e980a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.header .header-text{
+    padding: 15% 0 0 5%;
+}
+.header-text h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+.header-text h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.general-btn{
+    background: linear-gradient(45deg, #8bc727 80%, #70bf2d 20%);
+    color:white;
+    transition: .5s all ease;
+}
+.general-btn:hover{
+    background: linear-gradient(45deg, #70bf2d 80%, #8bc727 20%);
+    color:rgb(0, 0, 0);
+}
+@media only screen and (max-width: 600px){
+    .header .header-text{
+        text-align: center;
+    }
+    .header-text h1{
+        font-size: 3.3rem;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,11 @@
+.about-us .about-us-text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+}
+.about-us .about-us-text h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about-us .about-us-text p, ul li{
+    color: rgb(85, 85, 85);
+}
