@@ -12,7 +12,7 @@ const HomeDoctor = () => {
             <h1>Professors, Doctors and Other Specialists at Our Clinic</h1>
             <p>Our specialists are highly compassionate and professional in dealing with dental health. <br /> They are experienced in dentistry.</p>
             </div>
-            <div className="row my-5 px-5">
+            <div className="row my-5 px-5 g-5">
                     {
                         doctor.map(doctor => {
                             if(doctor.key <= 6){

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Pages/Shared/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -12,6 +11,8 @@ import Register from './Pages/Login/Register';
 import AuthProvider from './Context/AuthProvider';
 import IndividualService from './Pages/Services/IndividualService/IndividualService';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import NotFound from './Pages/404/NotFound';
+import Success from './Pages/Success/Success';
 
 function App() {
   return (
@@ -40,12 +41,18 @@ function App() {
           <Route path='/register'>
             <Register></Register>
           </Route>
+          <PrivateRoute path='/success'>
+            <Success></Success>
+          </PrivateRoute>
           <PrivateRoute path='/serviceinfo/:serviceid'>
             <IndividualService></IndividualService>
           </PrivateRoute>
           <PrivateRoute path='/appointment'>
             <Appointment></Appointment>
           </PrivateRoute>
+          <Route path="*">
+             <NotFound></NotFound>
+          </Route>
         </Switch>
         <Footer></Footer>
       </Router>

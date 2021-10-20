@@ -16,7 +16,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password, displayName)
         .then((userCredential) => {
           const user = userCredential.user;
-          setUser({})
+          setUser(user)
         })
         .catch((error) => {
           setError(error.message)
